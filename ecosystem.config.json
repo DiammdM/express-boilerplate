@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "app",
+      "script": "dist/src/server.js",
+      "instances": 1,
+      "autorestart": true,
+      "exec_mode": "fork",
+      "watch": false,
+      "time": true,
+      "max_memory_restart": "300M",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 8080
+      }
+    }
+  ]
+}
